@@ -1,0 +1,1851 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Tell the browser to be responsive to screen width -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="../landingpage/images/favicon.png">
+    <title>Admin Press Angular Template - An angular 10+ CLI template</title>
+    <!-- Bootstrap Core CSS -->
+    <link href="../landingpage/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="../landingpage/assets/prism/prism.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="../landingpage/css/style.css" rel="stylesheet">
+    <!-- You can change the theme colors from here -->
+    <link href="../landingpage/css/colors/blue.css" id="theme" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body class="fix-header card-no-border fix-sidebar">
+    
+    <!-- ============================================================== -->
+    <!-- Main wrapper - style you can find in pages.scss -->
+    <!-- ============================================================== -->
+    <div id="main-wrapper">
+        <!-- ============================================================== -->
+        <!-- Topbar header - style you can find in pages.scss -->
+        <!-- ============================================================== -->
+        <header class="topbar fixed-top">
+            <nav class="navbar top-navbar navbar-expand-md navbar-light">
+                <!-- ============================================================== -->
+                <!-- Logo -->
+                <!-- ============================================================== -->
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="index.html">
+                        <!-- Logo icon -->
+                        <b>
+                            <!-- Dark Logo icon -->
+                            <img src="../landingpage/images/logo-icon.png" alt="homepage" class="dark-logo" />
+                            <!-- Light Logo icon -->
+                            <img src="../landingpage/images/logo-light-icon.png" alt="homepage" class="light-logo" />
+                        </b>
+                        <!-- Logo text -->
+                        <span>
+                            <!-- dark Logo text -->
+                            <img src="../landingpage/images/logo-text.png" alt="homepage" class="dark-logo" />
+                            <!-- Light Logo text -->    
+                            <img src="../landingpage/images/logo-light-text.png" class="light-logo" alt="homepage" />
+                        </span> 
+                    </a>
+                </div>
+                <!-- ============================================================== -->
+                <!-- End Logo -->
+                <!-- ============================================================== -->
+                <div class="navbar-collapse">
+                    <!-- ============================================================== -->
+                    <!-- toggle and nav items -->
+                    <!-- ============================================================== -->
+                    <ul class="navbar-nav mr-auto mt-md-0 ">
+                        <!-- This is  -->
+                        <li class="nav-item"> <a class="nav-link nav-toggler hidden-md-up text-muted waves-effect waves-dark" href="javascript:void(0)"><i class="ti-menu"></i></a> </li>
+                        <!-- ============================================================== -->
+                        <!-- End Messages -->
+                        <!-- ============================================================== -->
+                    </ul>
+                    <!-- ============================================================== -->
+                    <!-- User profile and search -->
+                    <!-- ============================================================== -->
+                </div>
+            </nav>
+        </header>
+        <!-- ============================================================== -->
+        <!-- End Topbar header -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <aside class="left-sidebar">
+            <!-- Sidebar scroll-->
+            <div class="scroll-sidebar">
+                <!-- Sidebar navigation-->
+                <nav class="sidebar-nav">
+                    <ul id="sidebarnav">
+                        <li class="nav-small-cap">DOCUMENTATION</li>
+                        <li><a href="#intro" aria-expanded="false"><i class="mdi mdi-arrow-right-drop-circle"></i><span class="hide-menu">Introduction</span></a></li>
+                        <li><a href="#start" aria-expanded="false"><i class="mdi mdi-arrow-right-drop-circle"></i><span class="hide-menu">Getting Started</span></a></li>
+                        <li><a href="#folder" aria-expanded="false"><i class="mdi mdi-arrow-right-drop-circle"></i><span class="hide-menu">Folder Structure</span></a></li>
+                        <li><a href="#layout" aria-expanded="false"><i class="mdi mdi-arrow-right-drop-circle"></i><span class="hide-menu">Layouts</span></a></li>
+                        <li><a href="#style" aria-expanded="false"><i class="mdi mdi-arrow-right-drop-circle"></i><span class="hide-menu">Styles</span></a></li>
+                        <li><a href="#icon" aria-expanded="false"><i class="mdi mdi-arrow-right-drop-circle"></i><span class="hide-menu">Icons</span></a></li>
+                        <li><a href="#sidemenu" aria-expanded="false"><i class="mdi mdi-arrow-right-drop-circle"></i><span class="hide-menu">Sidebar Menu</span></a></li>
+                        <li><a href="#demos" aria-expanded="false"><i class="mdi mdi-arrow-right-drop-circle"></i><span class="hide-menu">Various Demos</span></a></li>
+                        <li><a href="#colors" aria-expanded="false"><i class="mdi mdi-arrow-right-drop-circle"></i><span class="hide-menu">Color Variations</strong></span></a></li>
+                        <li><a href="#grid" aria-expanded="false"><i class="mdi mdi-arrow-right-drop-circle"></i><span class="hide-menu">Content Grid</span></a></li>
+                        <li> <a class="has-arrow waves-effect waves-dark" href="#component" aria-expanded="false"><i class="mdi mdi-arrow-right-drop-circle"></i><span class="hide-menu">Components</span></a>
+                            <ul aria-expanded="false" class="collapse">
+                                <li><a href="#accordion">Accordion</a></li>
+                                <li><a href="#alert">Alert</a></li>
+                                <li><a href="#carousel">Carousel</a></li>
+                                <li><a href="#dropdown">Dropdown</a></li>
+                                <li><a href="#modal">Modal</a></li>
+                                <li><a href="#pagination">Pagination</a></li>
+                                <li><a href="#pt">Popover & Tooltip</a></li>
+                                <li><a href="#pb">Progressbar </a></li>
+                                <li><a href="#rating">Ratings</a></li>
+                                <li><a href="#tab">Tabs</a></li>
+                                <li><a href="#tp">Timepicker</a></li>
+                                <li><a href="#toastr">Toastr</a></li>
+                                <li><a href="#editor">Editor</a></li>
+                                <li><a href="#fu">File Upload</a></li>
+                                <li><a href="#dd">Drag & Drop</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#form" aria-expanded="false"><i class="mdi mdi-arrow-right-drop-circle"></i><span class="hide-menu">Forms </span></a></li>
+                        <li><a href="#table" aria-expanded="false"><i class="mdi mdi-arrow-right-drop-circle"></i><span class="hide-menu">Tables</span></a></li>
+                        <li><a href="#chart" aria-expanded="false"><i class="mdi mdi-arrow-right-drop-circle"></i><span class="hide-menu">Charts</span></a></li>
+                        <li><a href="#calendar" aria-expanded="false"><i class="mdi mdi-arrow-right-drop-circle"></i><span class="hide-menu">Calendar</span></a></li>
+                    </ul>
+                </nav>
+                <!-- End Sidebar navigation -->
+            </div>
+            <!-- End Sidebar scroll-->
+        </aside>
+        <!-- ============================================================== -->
+        <!-- End Left Sidebar - style you can find in sidebar.scss  -->
+        <!-- ============================================================== -->
+        <!-- ============================================================== -->
+        <!-- Page wrapper  -->
+        <!-- ============================================================== -->
+        <div class="page-wrapper">
+            <!-- ============================================================== -->
+            <!-- Container fluid  -->
+            <!-- ============================================================== -->
+            <div class="container-fluid">
+                <!-- ============================================================== -->
+                <!-- Start Page Content -->
+                <!-- ============================================================== -->
+                <div class="fix-width">
+                    <div class="row p-t-30">
+                        <div class="col-12">
+                            <!-- card -->
+                            <div class="card" id="intro">
+                                <div class="card-body">
+                                    <h3>Introduction</h3>
+                                    <hr>
+                                    <p>Admin Press Angular Dashboard Template is made with Angular 10+ CLI. This documentation will help you to understand template’s structure and how to edit. Please follow it very carefully to find out how template works and how you can edit things. You should have knowledge of Angular, CSS and HTML to be able to modify this template.</p>
+                                    
+                                    <p>Support does include:
+                                        <ul>
+                                            <li>Answering your questions or problems regarding the template.</li>
+                                            <li>Giving solution to the Bugs reported.</li>
+                                        </ul>
+                                    </p>
+                                    <p>Support does not include:
+                                        <ul>
+                                            <li>Custmaization Work</li>
+                                            <li>Any Installation Work</li>
+                                            <li>Support for any Third Party Plugins / Software</li>
+                                            <li>Support or Guide for How to integrate with any technologies (like, PHP, .net, Java etc)</li>
+                                        </ul>
+                                    </p>
+                                    <p>Before creating ticket, please make sure your question is regarding support only and not for custmaization and also follow full documentation to make sure the question / bug you are posting is not mentioned in documentation.</p>
+                                    <p>We at WrapPixel offers affordable custmaization services for our templates. For any custmaization work, please email us at <a href="mailto:info@themedesigner.in">info@themedesigner.in</a>.</p>
+                                    <p>Please give 5 star rating to our template, as rating will help other people to trust our template.</p>
+                                    <hr> 
+                                    <h5>Dependencies</h5>
+                                    <hr>
+                                    <ul>
+                                        <li><a href="https://angular.io/" target="_blank">Angular 10+</a></li>
+                                        <li><a href="https://getbootstrap.com/docs/4.0/getting-started/introduction/" target="_blank">Bootstrap 4</a></li>
+                                        <li><a href="https://ng-bootstrap.github.io/" target="_blank">ng-bootstrap</a></li>
+                                        <li><a href="http://sass-lang.com/" target="_blank">Sass</a></li>                
+                                    </ul>
+                                    <hr>
+                                    <h5>Browser Support</h5>
+                                    <hr>
+                                    <p>Adminpress angular is built to work in the latest desktop and mobile and tablet browsers.</p>
+                                    <ul>
+                                        <li>Chrome (latest)</li>
+                                        <li>FireFox (latest)</li>
+                                        <li>Safari (latest)</li>
+                                        <li>Opera (latest)</li>
+                                        <li>Edge (latest)</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- card -->
+                            <!-- card -->
+                            <div class="card" id="start">
+                                <div class="card-body">
+                                    <h3>Getting Started</h3>
+                                    <hr>
+                                    <ul>
+                                        <li><strong>Node.js and NPM :</strong> You can download Node.js from <a href="https://nodejs.org" target="_blank">https://nodejs.org</a>. NPM comes bundled with Node.js.</li>
+                                        <li><strong>angular-cli :</strong> You can install angular-cli by executing from your command window  <code>npm install -g @angular/cli</code> . More details can be found here <a href="https://github.com/angular/angular-cli" target="_blank">https://github.com/angular/angular-cli</a>.</li>
+                                    </ul>
+                                    <hr>
+                                    <h5>NPM Packages</h5>
+                                    <hr>
+                                    <ul>
+                                        <li>Before proceding you'll need to install npm packages. You can do this by running <code>npm install</code> from the root of your project to install all the necessary dependencies.</li>                
+                                    </ul>
+                                    <hr>
+                                    <h5>Development Server</h5>
+                                    <hr>
+                                    <ul>
+                                        <li>Run <code>ng serve</code> for a dev server. Navigate to <a href="http://localhost:4200/" target="_blank">http://localhost:4200/</a> . The app will automatically reload if you change any of the source files.</li>
+                                    </ul>
+                                    <hr>
+                                    <h5>Building</h5>
+                                    <hr>
+                                    <ul>
+                                        <li>Run <code> ng build</code> to build the project. The build artifacts will be stored in the <code> dist/</code> directory. Use the <code> --prod</code> flag for a production build.</li>                
+                                    </ul>
+                                    <hr>
+                                    <h5>More Help</h5>
+                                    <hr>
+                                    <ul>
+                                        <li>To get more help on the <code>angular-cli</code>  use <code> ng --help </code> or go check out the <a href="https://github.com/angular/angular-cli/blob/master/README.md" target="_blank">Angular-CLI README</a> .</li>                
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- card -->
+                            <!-- card -->
+                            <div class="card" id="folder">
+                                <div class="card-body">
+                                    <h3>Folder Structure</h3>
+                                    <hr>
+                                    <h5>The src folder</h5>
+                                    <pre class="highlight bg-light">
+                                        <code>
+        src/
+        ├── app/
+        |   ├── app.component.css
+        |   ├── app.component.html
+        |   ├── app.component.spec.ts
+        |   ├── app.component.ts
+        |   └── app.module.ts
+        ├── ../landingpage/assets/
+        |   └── .gitkeep
+        ├── environments/
+        |   ├── environment.prod.ts
+        |   └── environment.ts
+        ├── favicon.ico
+        ├── index.html
+        ├── main.ts
+        ├── polyfills.ts
+        ├── styles.css
+        ├── test.ts
+        ├── tsconfig.app.json
+        └── tsconfig.spec.json
+                                        </code>
+                                    </pre>
+                                    <hr>
+                                    <h5>The root folder</h5>
+                                    <pre class="highlight bg-light">
+                                        <code>
+        main/
+        ├── e2e/
+        |   ├── app.e2e-spec.ts
+        |   ├── app.po.ts
+        |   └── tsconfig.e2e.json
+        ├── node_modules/...
+        ├── src/...
+        ├── .angular.json
+        ├── .editorconfig
+        ├── .gitignore
+        ├── karma.conf.js
+        ├── package.json
+        ├── protractor.conf.js
+        ├── README.md
+        ├── tsconfig.json
+        └── tslint.json
+                                        </code>
+                                    </pre>
+                                </div>
+                            </div>
+                            <!-- card -->
+                            <div class="card" id="layout">
+                                <div class="card-body">
+                                    <h3>Layouts</h3>
+                                    <hr>
+                                    <p>There are two types of layouts used in this template.</p>
+                                    <hr>
+                                    <h5>Full Layout</h5>
+                                    <hr>
+                                    <p>This layout is used for inner pages which consists header, menu sidebar, right sidebar etc...</p>
+                                    <hr>
+                                    <h5>Blank Layout</h5>
+                                    <hr>
+                                    <p>This layout is used for authentication pages like login, register, lockscreen, forgot password which doesn't consist any of the elements that are used in the inner pages.</p>
+                                </div>
+                            </div>                    
+                            <!-- card -->
+                            <div class="card" id="style">
+                                <div class="card-body">
+                                    <h3>Style Customization</h3>
+                                    <hr>
+                                    <h5>scss folder</h5>
+                                    <pre class="highlight bg-light">
+                                        <code>
+        main/
+        ├── src/
+        |   ├── ../landingpage/assets/
+        |   |   ├── scss/
+        |   |   |   ├── colors/
+        |   |   |   ├── icons/
+        |   |   |   ├── app.scss
+        |   |   |   ├── grid.scss
+        |   |   |   ├── material.scss
+        |   |   |   ├── pages.scss
+        |   |   |   ├── responsive.scss
+        |   |   |   ├── sidebar.scss
+        |   |   |   ├── style.scss
+        |   |   |   ├── variables.scss
+        |   |   |   ├── widgets.scss
+                                        </code>
+                                    </pre>
+                                    <div class="table-responsive">
+                                        <table class="table table-striped mb-0">
+                                            <thead>
+                                                <tr>
+                                                    <th>#</th>
+                                                    <th>Folder/Files</th>
+                                                    <th>Details</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">1</th>
+                                                    <td>colors</td>
+                                                    <td><code>colors/</code> folder contains various color scss files.</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">2</th>
+                                                    <td>icons</td>
+                                                    <td><code>icons/</code> folder contains all the icons scss files used in the template.</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">3</th>
+                                                    <td>rtl</td>
+                                                    <td><code>rtl/</code> folder contains rtl scss which is used in rtl demo.</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">4</th>
+                                                    <td>app.scss</td>
+                                                    <td>contains all the common css used on the theme.</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">5</th>
+                                                    <td>grid.scss</td>
+                                                    <td>contains content grid related css of the theme.</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">6</th>
+                                                    <td>material.scss</td>
+                                                    <td>contains material component css of the theme.</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">7</th>
+                                                    <td>pages.scss</td>
+                                                    <td>contains various page templates css of the theme.</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">8</th>
+                                                    <td>Responsive.scss</td>
+                                                    <td>contains responsive layout css of the theme.</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">9</th>
+                                                    <td>sidebar.scss</td>
+                                                    <td>contains sidebar menu css of the theme.</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">10</th>
+                                                    <td>style.scss</td>
+                                                    <td>imports all the other scss files and compiles them into single style.css</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">11</th>
+                                                    <td>variables.scss</td>
+                                                    <td>contains all the variables used in the scss files of the theme.</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">12</th>
+                                                    <td>widgets.scss</td>
+                                                    <td>contains all the css of the widgets designed in the theme.</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- card -->
+                            <div class="card" id="icon">
+                                <div class="card-body">
+                                    <h3>Icons</h3>
+                                    <hr>
+                                    <p>Below is the table of icon fonts used in this template.</p>
+                                    <table class="table table-bordered m-0">
+                                        <thead>
+                                            <tr>
+                                                <th style="width: 30%;">Icon Name</th>
+                                                <th>Example</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>Font-awesome</td>
+                                                <td><code>&lt;i class="fa fa-icon-name"&gt;&lt;/i&gt; </code></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Material Icons</td>
+                                                <td><code>&lt;i class="mdi mdi-icon-name"&gt;&lt;/i&gt; </code></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Simple Line Icons</td>
+                                                <td><code>&lt;i class="icon-name_of_icon"&gt;&lt;/i&gt; </code></td>
+                                            </tr>
+                                            <tr>
+                                                <td>Themify Icons</td>
+                                                <td><code>&lt;i class="ti-icon-name"&gt;&lt;/i&gt; </code></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <!-- card -->
+                            <div class="card" id="sidemenu">
+                                <div class="card-body">
+                                    <h3>Menu Structure</h3>
+                                    <hr>
+                                    <p>A modern responsive menu.</p>
+                                    <hr>
+                                    <h5>Label Config</h5>
+                                    <hr>
+                                    <p>To add a label above certain group of menu-items, do as the following example:</p>
+                                    <pre class="language-javascript">
+                                        <code class="language-javascript">
+{
+    path: '', 
+    title: 'Personal',           // name of the label
+    icon: '', 
+    class: 'nav-small-cap',      // this class is necessary
+    label: '', 
+    labelClass: '', 
+    extralink: true, 
+    submenu: []
+}
+                                        </code>
+                                    </pre>
+                                    <h5>Single Menu Config</h5>
+                                    <hr>
+                                    <p>To add single menu item, do as the following example:</p>
+                                    <pre class="language-javascript">
+                                        <code class="language-javascript">
+{
+    path: '/widgets',             
+    title: 'Widgets',             // menu title
+    icon: 'mdi mdi-widgets',      // menu icon
+    class: '',                    // additional classes
+    label: '', 
+    labelClass: '', 
+    extralink: false, 
+    submenu: []                   // submenu items if available
+}
+                                        </code>
+                                    </pre>
+                                    <hr>
+                                    <h5>Dropdown Menu Config</h5>
+                                    <hr>
+                                    <p>To add dropdown menu item, do as the following example:</p>
+                                    <pre class="language-javascript">
+                                        <code class="language-javascript">
+{
+    path: '', 
+    title: 'Dashboards',                                                  // menu title
+    icon: 'mdi mdi-gauge',                                                // menu icon
+    class: 'has-arrow',                                                   // only if driodown menu
+    label: '4',                                                           // label name
+    labelClass: 'label label-rouded label-themecolor pull-right',         // if label available
+    extralink: false,
+    submenu: [                                                        // submenus like single menu config
+        { 
+            path: '/dashboard/dashboard1', 
+            title: 'Modern', 
+            icon: '', 
+            class: '', 
+            label: '', 
+            labelClass: '', 
+            extralink: false, 
+            submenu: [] 
+        },
+        { 
+            path: '/dashboard/dashboard2', 
+            title: 'Classic', 
+            icon: '', 
+            class: '', 
+            label: '', 
+            labelClass: '', 
+            extralink: false, 
+            submenu: [] 
+        },
+        { 
+            path: '/dashboard/dashboard3', 
+            title: 'Analytical', 
+            icon: '', 
+            class: '', 
+            label: '', 
+            labelClass: '', 
+            extralink: false, 
+            submenu: [] 
+        },
+    ]
+}
+                                        </code>
+                                    </pre>
+                                    <hr>
+                                    <h5>Multiple Dropdown Menu Config</h5>
+                                    <hr>
+                                    <p>To add multi-dropdown menu item, do as the following example:</p>
+                                    <pre class="language-javascript">
+                                        <code class="language-javascript">
+{
+    path: '', 
+    title: 'Menu Levels',                                   // menu name
+    icon: 'mdi mdi-arrange-send-backward',                  // menu item
+    class: 'has-arrow',                                     // only if dropdown-menu
+    label: '', 
+    labelClass: '', 
+    extralink: false,
+    submenu: [                                              // first-level dropdown
+        { 
+            path: 'javascript:void(0);', 
+            title: 'Second Level', 
+            icon: '', 
+            class: '', 
+            label: '', 
+            labelClass: '', 
+            extralink: true, 
+            submenu: [] 
+        },
+        {
+            path: '', 
+            title: 'Second Child', 
+            icon: '', 
+            class: 'has-arrow', 
+            label: '', 
+            labelClass: '', 
+            extralink: false,
+            submenu: [                                      // second-level dropdown
+                { 
+                    path: 'javascript:void(0);', 
+                    title: 'Third 1.1', 
+                    icon: '', 
+                    class: '', 
+                    label: '', 
+                    labelClass: '', 
+                    extralink: false, 
+                    submenu: [] 
+                },
+                { 
+                    path: 'javascript:void(0);', 
+                    title: 'Third 1.2', 
+                    icon: '', 
+                    class: '', 
+                    label: '', 
+                    labelClass: '', 
+                    extralink: false, 
+                    submenu: [] 
+                },
+            ]
+        }
+    ]
+} 
+                                        </code>
+                                    </pre>
+                                    <hr>
+                                    <h5>Routes Config</h5>
+                                    <hr>
+                                    <p>You also have to configure specific component's routing file. like for <code>dashboard</code> component, you have to configure <code>dashboards.routing.ts</code> file as following:</p>
+                                    <pre class="language-javascript">
+                                        <code class="language-javascript">
+export const DashboardsRoutes: Routes = [
+    { 
+        path: '',
+        children: [{
+          path: 'dashboard1', 
+          component: Dashboard1Component
+        },{
+          path: 'dashboard2', 
+          component: Dashboard2Component
+        },{
+          path: 'dashboard3', 
+          component: Dashboard3Component
+        }]
+    }
+];
+                                        </code>
+                                    </pre>
+                                    <hr>
+                                    <h5>Refer following link for usage:</h5>
+                                    <hr>
+                                    <div class="table-responsive">
+                                        <table class="table table-hover table-bordered">
+                                            <thead>
+                                                <tr>
+                                                    <th>Type</th>
+                                                    <th>URL</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td><strong>Template Page</strong></td>
+                                                    <td><a href="https://wrappixel.com/demos/angular-admin-templates/admin-press-angular/main/#/dashboards/dashboard1" target="_blank">https://wrappixel.com/demos/angular-admin-templates/admin-press-angular/main/#/dashboards/dashboard1</a></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card" id="demos">
+                                <div class="card-body">
+                                    <h3>Various Demos</h3>
+                                    <hr>
+                                    <p>There are various demo configurations available with this template.</p>
+                                    <hr>
+                                    <h5>Dark Layout Demo</h5>
+                                    <hr>
+                                    <p>To create Dark demo from this template, do the change as follows:</p>
+                                    <ul>
+                                        <li>Open the file <code>full.component.ts</code>.</li>
+                                        <li>Path for that file is:
+                                            <code>src/app/layouts/full/full.component.ts</code>
+                                        </li>
+                                        <li>In that file, you have to change a variable <code>showDarktheme = 'false';</code> to <code>showDarktheme = 'true';</code> and done.</li>
+                                    </ul>
+                                    <hr>
+                                    <h5>Minisidebar Layout Demo</h5>
+                                    <hr>
+                                    <p>To create Minisidebar demo from this template, do the change as follows:</p>
+                                    <ul>
+                                        <li>Open the file <code>full.component.ts</code>.</li>
+                                        <li>Path for that file is:
+                                            <code>src/app/layouts/full/full.component.ts</code>
+                                        </li>
+                                        <li>In that file, you have to change a variable <code>showMinisidebar = 'false';</code> to <code>showMinisidebar = 'true';</code>.</li>
+                                        <li>Also In that file, find the code of if condition <code>if (this.innerWidth < 1170)</code> now change that if condition as per below code:</li>
+                                        <pre class="language-javascript">
+                                            <code>
+                                                if (this.innerWidth < 1170) {
+                                                  this.showMinisidebar = true;
+                                                } else {
+                                                  this.showMinisidebar = true;
+                                                }
+                                            </code>
+                                        </pre>
+                                    </ul>
+                                    <hr>
+                                    <h5>Boxed Layout Demo</h5>
+                                    <hr>
+                                    <p>To create Boxed Layout demo from this template, do the change as follows:</p>
+                                    <ul>
+                                        <li>Open the file <code>full.component.ts</code>.</li>
+                                        <li>Path for that file is:
+                                            <code>src/app/layouts/full/full.component.ts</code>
+                                        </li>
+                                        <li>In that file, you have to change a variable <code>showBoxedtheme = 'false';</code> to <code>showBoxedtheme = 'true';</code> and done.</li>
+                                    </ul>
+                                    <hr>
+                                    <h5>Horizontal Layout Demo</h5>
+                                    <hr>
+                                    <p>To create Horizontal Layout demo from this template, do the change as follows:</p>
+                                    <ul>
+                                        <li>Open the file <code>full.component.ts</code>.</li>
+                                        <li>Path for that file is:
+                                            <code>src/app/layouts/full/full.component.ts</code>
+                                        </li>
+                                        <li>In that file, you have to change a variable <code>showHorizontalNav = 'false';</code> to <code>showHorizontalNav = 'true';</code> and done.</li>
+                                    </ul>
+                                    <hr>
+                                    <h5>RTL Layout Demo</h5>
+                                    <hr>
+                                    <p>To create RTL Layout demo from this template, do the change as follows:</p>
+                                    <ul>
+                                        <li>Open the file <code>full.component.ts</code>.</li>
+                                        <li>Path for that file is:
+                                            <code>src/app/layouts/full/full.component.ts</code>
+                                        </li>
+                                        <li>In that file, you have to change a variable <code>showRtl = 'false';</code> to <code>showRtl = 'true';</code> and done.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card" id="colors">
+                                <div class="card-body">
+                                    <h3>Color Variations</h3>
+                                    <hr>
+                                    <p>There are various colors available with this template.</p>
+                                    <hr>
+                                    <ul>
+                                        <li>12 color variations are available with this template:
+                                            <ul>
+                                                <li>blue</li>
+                                                <li>bluedark</li>
+                                                <li>green</li>
+                                                <li>greendark</li>
+                                                <li>red</li>
+                                                <li>reddark</li>
+                                                <li>default</li>
+                                                <li>defaultdark</li>
+                                                <li>megna</li>
+                                                <li>megnadark</li>
+                                                <li>purple</li>
+                                                <li>purpledark</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                    <hr>
+                                    <h5>How to change color of the template?</h5>
+                                    <hr>
+                                    <p>To change color of this template, do the change as follows:</p>
+                                    <ul>
+                                        <li>Open the file <code>full.component.ts</code>.</li>
+                                        <li>Path for that file is:
+                                            <code>src/app/layouts/full/full.component.ts</code>
+                                        </li>
+                                        <li>In that file, you have to change a variable <code>color = 'blue';</code> to <code>color = 'COLOR_NAME';</code> and done.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!-- card -->
+                            <div class="card" id="grid">
+                                <div class="card-body">
+                                    <h3>Content Grid</h3>
+                                    <hr>
+                                    <h6 class="card-subtitle">See how aspects of the Bootstrap grid system work across multiple devices with a handy table. check the <a href="https://v4-alpha.getbootstrap.com/layout/grid/">official website grid page</a></h6>
+                                    <div class="table-responsive">
+                                        <table class="table table-bordered table-striped ">
+                                            <thead>
+                                                <tr>
+                                                    <th></th>
+                                                    <th class="text-center"> Extra small
+                                                        <br> <small>&lt;576px</small> </th>
+                                                    <th class="text-center"> Small
+                                                        <br> <small>≥576px</small> </th>
+                                                    <th class="text-center"> Medium
+                                                        <br> <small>≥768px</small> </th>
+                                                    <th class="text-center"> Large
+                                                        <br> <small>≥992px</small> </th>
+                                                    <th class="text-center"> Extra large
+                                                        <br> <small>≥1200px</small> </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th class="text-nowrap" scope="row">Grid behavior</th>
+                                                    <td>Horizontal at all times</td>
+                                                    <td colspan="4">Collapsed to start, horizontal above breakpoints</td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="text-nowrap" scope="row">Max container width</th>
+                                                    <td>None (auto)</td>
+                                                    <td>540px</td>
+                                                    <td>720px</td>
+                                                    <td>960px</td>
+                                                    <td>1140px</td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="text-nowrap" scope="row">Class prefix</th>
+                                                    <td><code>.col-</code></td>
+                                                    <td><code>.col-sm-</code></td>
+                                                    <td><code>.col-md-</code></td>
+                                                    <td><code>.col-lg-</code></td>
+                                                    <td><code>.col-xl-</code></td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="text-nowrap" scope="row"># of columns</th>
+                                                    <td colspan="5">12</td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="text-nowrap" scope="row">Gutter width</th>
+                                                    <td colspan="5">30px (15px on each side of a column)</td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="text-nowrap" scope="row">Nestable</th>
+                                                    <td colspan="5">Yes</td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="text-nowrap" scope="row">Offsets</th>
+                                                    <td colspan="5">Yes</td>
+                                                </tr>
+                                                <tr>
+                                                    <th class="text-nowrap" scope="row">Column ordering</th>
+                                                    <td colspan="5">Yes</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <p>Grid classes apply to devices with screen widths greater than or equal to the breakpoint sizes, and override grid classes targeted at smaller devices. Therefore, applying any <code>.col-md-</code> class to an element will not only affect its styling on medium devices but also on large devices if a <code>.col-lg-</code> class is not present.</p>
+                                    <hr>
+                                    <h4 class="card-title">Example: Stacked-to-horizontal</h4>
+                                    <h6 class="card-subtitle">Using a single set of <code>.col-md-*</code> grid classes, you can create a default grid system that starts out stacked on mobile devices and tablet devices (the extra small to small range) before becoming horizontal on desktop (medium) devices. Place grid columns in any <code>.row</code>.</h6>
+                                    <div class="row show-grid">
+                                        <div class="col-md-1">.col-md-1</div>
+                                        <div class="col-md-1">.col-md-1</div>
+                                        <div class="col-md-1">.col-md-1</div>
+                                        <div class="col-md-1">.col-md-1</div>
+                                        <div class="col-md-1">.col-md-1</div>
+                                        <div class="col-md-1">.col-md-1</div>
+                                        <div class="col-md-1">.col-md-1</div>
+                                        <div class="col-md-1">.col-md-1</div>
+                                        <div class="col-md-1">.col-md-1</div>
+                                        <div class="col-md-1">.col-md-1</div>
+                                        <div class="col-md-1">.col-md-1</div>
+                                        <div class="col-md-1">.col-md-1</div>
+                                    </div>
+                                    <div class="row show-grid">
+                                        <div class="col-md-8">.col-md-8</div>
+                                        <div class="col-md-4">.col-md-4</div>
+                                    </div>
+                                    <div class="row show-grid">
+                                        <div class="col-md-4">.col-md-4</div>
+                                        <div class="col-md-4">.col-md-4</div>
+                                        <div class="col-md-4">.col-md-4</div>
+                                    </div>
+                                    <div class="row show-grid">
+                                        <div class="col-md-6">.col-md-6</div>
+                                        <div class="col-md-6">.col-md-6</div>
+                                    </div>
+                                    <hr>
+                                    <h4 class="card-title">Example: Mobile and desktop</h4>
+                                    <h6 class="card-subtitle">Don't want your columns to simply stack in smaller devices? Use the extra small and medium device grid classes by adding <code>.col-xs-*</code> <code>.col-md-*</code> to your columns. See the example below for a better idea of how it all works.</h6>
+                                    <div class="row show-grid">
+                                        <div class="col-xs-12 col-md-8">.col-xs-12 .col-md-8</div>
+                                        <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+                                    </div>
+                                    <div class="row show-grid">
+                                        <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+                                        <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+                                        <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+                                    </div>
+                                    <div class="row show-grid">
+                                        <div class="col-xs-6">.col-xs-6</div>
+                                        <div class="col-xs-6">.col-xs-6</div>
+                                    </div>
+                                    <hr>
+                                    <h4 class="card-title">Example: Mobile, tablet, desktops</h4>
+                                    <h6 class="card-subtitle">Build on the previous example by creating even more dynamic and powerful layouts with tablet <code>.col-sm-*</code> classes.</h6>
+                                    <div class="row show-grid">
+                                        <div class="col-xs-12 col-sm-6 col-md-8">.col-xs-12 .col-sm-6 .col-md-8</div>
+                                        <div class="col-xs-6 col-md-4">.col-xs-6 .col-md-4</div>
+                                    </div>
+                                    <div class="row show-grid">
+                                        <div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
+                                        <div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
+                                        <!-- Optional: clear the XS cols if their content doesn't match in height -->
+                                        <div class="clearfix visible-xs"></div>
+                                        <div class="col-xs-6 col-sm-4">.col-xs-6 .col-sm-4</div>
+                                    </div>
+                                    <hr>
+                                    <h4 class="card-title">Responsive column resets</h4>
+                                    <h6 class="card-subtitle">With the four tiers of grids available you're bound to run into issues where, at certain breakpoints, your columns don't clear quite right as one is taller than the other. To fix that, use a combination of a <code>.clearfix</code> and our responsive utility classes.</h6>
+                                    <div class="row show-grid">
+                                        <div class="col-xs-6 col-sm-3"> .col-xs-6 .col-sm-3
+                                            <br> Resize your viewport or check it out on your phone for an example. </div>
+                                        <div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3</div>
+                                        <!-- Add the extra clearfix for only the required viewport -->
+                                        <div class="clearfix visible-xs"></div>
+                                        <div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3</div>
+                                        <div class="col-xs-6 col-sm-3">.col-xs-6 .col-sm-3</div>
+                                    </div>
+                                    <hr>
+                                    <h4 class="card-title">Offsetting columns</h4>
+                                    <h6 class="card-subtitle">Move columns to the right using <code>.offset-md--*</code> classes. These classes increase the left margin of a column by <code>*</code> columns. For example, <code>.offset-md-4</code> moves <code>.col-md-4</code> over four columns.</h6>
+                                    <div class="row show-grid">
+                                        <div class="col-md-4">.col-md-4</div>
+                                        <div class="col-md-4 offset-md-4">.col-md-4 .col-md-offset-4</div>
+                                    </div>
+                                    <div class="row show-grid">
+                                        <div class="col-md-3 offset-md-3">.col-md-3 .col-md-offset-3</div>
+                                        <div class="col-md-3 offset-md-3">.col-md-3 .col-md-offset-3</div>
+                                    </div>
+                                    <div class="row show-grid">
+                                        <div class="col-md-6 offset-md-3">.col-md-6 .col-md-offset-3</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- card -->
+                            <div class="card" id="component">
+                                <div class="card-body">
+                                    <h3>Components</h3>
+                                    <hr>
+                                    <p>This template uses <code>ng-bootstrap</code> components which contains a set of native Angular directives based on Bootstrap's markup and CSS. As a result no dependency on jQuery or Bootstrap's JavaScript is required. The only required dependencies are:</p>
+                                    <ul>
+                                        <li>
+                                            <a href="https://angular.io" target="_blank">Angular</a> (<em>requires</em> Angular version 4 or higher, tested with 4.0.3)
+                                        </li>
+                                        <li>
+                                            <a href="https://www.getbootstrap.com" target="_blank">Bootstrap CSS</a> (tested with 4.0.0-beta.2)
+                                        </li>
+                                    </ul>
+                                    <hr>
+                                    <h5>Installation</h5>
+                                    <hr>
+                                    <p>After installing the above dependencies, install <code>ng-bootstrap</code> via: <br><code>npm install --save @ng-bootstrap/ng-bootstrap</code></p>
+                                    <p>Once installed you need to import main module.</p>
+                                    <pre>import {NgbModule} from '@ng-bootstrap/ng-bootstrap';</pre>
+                                    <p>The only remaining part is to list the imported module in your root module and any additional application modules that make use of the components in this library. The exact  method will be slightly different for the root (top-level) module for which you should end up with the code similar to (notice <code>NgbModule.forRoot()</code>):</p>
+                                    <pre>
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+
+@NgModule({
+  declarations: [AppComponent, ...],
+  imports: [NgbModule.forRoot(), ...],
+  bootstrap: [AppComponent]
+})
+export class AppModule {
+}
+                                    </pre>
+                                    <p>Other modules in your application can simply import <code>NgbModule</code>:</p>
+                                    <pre>
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+
+@NgModule({
+  declarations: [OtherComponent, ...],
+  imports: [NgbModule, ...]
+})
+export class OtherModule {
+}
+                                    </pre>
+                                </div>
+                            </div>
+                            <!-- card -->
+                            <div class="card" id="accordion">
+                                <div class="card-body">
+                                    <h3>Accordion</h3>
+                                    <hr>
+                                    <p><strong>Refer following links for usage and more options:</strong></p>
+                                    <div class="table-responsive">
+                                        <table class="table table-bordered table-striped">
+                                            <thead>
+                                                <tr>
+                                                    <th>Type</th>
+                                                    <th>URL</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td><strong>NG-Bootstrap Page</strong></td>
+                                                    <td><a href="https://ng-bootstrap.github.io/#/components/accordion" target="_blank">https://ng-bootstrap.github.io/#/components/accordion</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><strong>Template Page</strong></td>
+                                                    <td><a href="https://wrappixel.com/demos/angular-admin-templates/admin-press-angular/main/#/component/accordion" target="_blank">https://wrappixel.com/demos/angular-admin-templates/admin-press-angular/main/#/component/accordion</a></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- card -->
+                            <div class="card" id="alert">
+                                <div class="card-body">
+                                    <h3>Alert</h3>
+                                    <hr>
+                                    <p>Provide contextual feedback messages for typical user actions with the handful of available and flexible alert messages.</p>
+                                    <p><strong>Refer following links for usage and more options:</strong></p>
+                                    <div class="table-responsive">
+                                        <table class="table table-bordered table-striped">
+                                            <thead>
+                                                <tr>
+                                                    <th>Type</th>
+                                                    <th>URL</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td><strong>NG-Bootstrap Page</strong></td>
+                                                    <td><a href="https://ng-bootstrap.github.io/#/components/alert" target="_blank">https://ng-bootstrap.github.io/#/components/alert</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><strong>Template Page</strong></td>
+                                                    <td><a href="https://wrappixel.com/demos/angular-admin-templates/admin-press-angular/main/#/component/alert" target="_blank">https://wrappixel.com/demos/angular-admin-templates/admin-press-angular/main/#/component/alert</a></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- card -->
+                            <div class="card" id="carousel">
+                                <div class="card-body">
+                                    <h3>Carousel</h3>
+                                    <hr>
+                                    <p>Directive to easily create carousels based on Bootstrap's markup.</p>
+                                    <p><strong>Refer following links for usage and more options:</strong></p>
+                                    <div class="table-responsive">
+                                        <table class="table table-hover table-bordered">
+                                            <thead>
+                                                <tr>
+                                                    <th>Type</th>
+                                                    <th>URL</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td><strong>NG-Bootstrap Page</strong></td>
+                                                    <td><a href="https://ng-bootstrap.github.io/#/components/carousel" target="_blank">https://ng-bootstrap.github.io/#/components/carousel</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><strong>Template Page</strong></td>
+                                                    <td><a href="https://wrappixel.com/demos/angular-admin-templates/admin-press-angular/main/#/component/carousel" target="_blank">https://wrappixel.com/demos/angular-admin-templates/admin-press-angular/main/#/component/carousel</a></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- card -->
+                            <div class="card" id="dropdown">
+                                <div class="card-body">
+                                    <h3>Dropdown</h3>
+                                    <hr>
+                                    <p><strong>Refer following links for usage and more options:</strong></p>
+                                    <div class="table-responsive">
+                                        <table class="table table-hover table-bordered">
+                                            <thead>
+                                                <tr>
+                                                    <th>Type</th>
+                                                    <th>URL</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td><strong>NG-Bootstrap Page</strong></td>
+                                                    <td><a href="https://ng-bootstrap.github.io/#/components/dropdown" target="_blank">https://ng-bootstrap.github.io/#/components/dropdown</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><strong>Template Page</strong></td>
+                                                    <td><a href="https://wrappixel.com/demos/angular-admin-templates/admin-press-angular/main/#/component/dropdown" target="_blank">https://wrappixel.com/demos/angular-admin-templates/admin-press-angular/main/#/component/dropdown</a></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- card -->
+                            <div class="card" id="modal">
+                                <div class="card-body">
+                                    <h3>Modal</h3>
+                                    <hr>
+                                    <p><strong>Refer following links for usage and more options:</strong></p>
+                                    <div class="table-responsive">
+                                        <table class="table table-hover table-bordered">
+                                            <thead>
+                                                <tr>
+                                                    <th>Type</th>
+                                                    <th>URL</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td><strong>NG-Bootstrap Page</strong></td>
+                                                    <td><a href="https://ng-bootstrap.github.io/#/components/modal" target="_blank">https://ng-bootstrap.github.io/#/components/modal</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><strong>Template Page</strong></td>
+                                                    <td><a href="https://wrappixel.com/demos/angular-admin-templates/admin-press-angular/main/#/component/modal" target="_blank">https://wrappixel.com/demos/angular-admin-templates/admin-press-angular/main/#/component/modal</a></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- card -->
+                            <div class="card" id="pagination">
+                                <div class="card-body">
+                                    <h3>Pagination</h3>
+                                    <hr>
+                                    <p>Provide pagination links for your site or app with the multi-page pagination component, or the simpler pager alternative.</p>
+                                    <p><strong>Refer following links for usage and more options:</strong></p>
+                                    <div class="table-responsive">
+                                        <table class="table table-hover table-bordered">
+                                            <thead>
+                                                <tr>
+                                                    <th>Type</th>
+                                                    <th>URL</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td><strong>NG-Bootstrap Page</strong></td>
+                                                    <td><a href="https://ng-bootstrap.github.io/#/components/pagination" target="_blank">https://ng-bootstrap.github.io/#/components/pagination</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><strong>Template Page</strong></td>
+                                                    <td><a href="https://wrappixel.com/demos/angular-admin-templates/admin-press-angular/main/#/component/pagination" target="_blank">https://wrappixel.com/demos/angular-admin-templates/admin-press-angular/main/#/component/pagination</a></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- card -->
+                            <div class="card" id="pt">
+                                <div class="card-body">
+                                    <h3>Popover & Tooltip</h3>
+                                    <hr>
+                                    <p><strong>Refer following links for usage and more options:</strong></p>
+                                    <div class="table-responsive">
+                                        <table class="table table-hover table-bordered">
+                                            <thead>
+                                                <tr>
+                                                    <th>Type</th>
+                                                    <th>URL</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td><strong>NG-Bootstrap Page</strong></td>
+                                                    <td><a href="https://ng-bootstrap.github.io/#/components/popover" target="_blank">https://ng-bootstrap.github.io/#/components/popover</a><br><a href="https://ng-bootstrap.github.io/#/components/tooltip" target="_blank">https://ng-bootstrap.github.io/#/components/tooltip</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><strong>Template Page</strong></td>
+                                                    <td><a href="https://wrappixel.com/demos/angular-admin-templates/admin-press-angular/main/#/component/poptool" target="_blank">https://wrappixel.com/demos/angular-admin-templates/admin-press-angular/main/#/component/poptool</a></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- card -->
+                            <div class="card" id="pb">
+                                <div class="card-body">
+                                    <h3>Progressbar</h3>
+                                    <hr>
+                                    <p><strong>Refer following links for usage and more options:</strong></p>
+                                    <div class="table-responsive">
+                                        <table class="table table-hover table-bordered">
+                                            <thead>
+                                                <tr>
+                                                    <th>Type</th>
+                                                    <th>URL</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td><strong>NG-Bootstrap Page</strong></td>
+                                                    <td><a href="https://ng-bootstrap.github.io/#/components/progressbar" target="_blank">https://ng-bootstrap.github.io/#/components/progressbar</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><strong>Template Page</strong></td>
+                                                    <td><a href="https://wrappixel.com/demos/angular-admin-templates/admin-press-angular/main/#/component/progressbar" target="_blank">https://wrappixel.com/demos/angular-admin-templates/admin-press-angular/main/#/component/progressbar</a></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- card -->
+                            <div class="card" id="rating">
+                                <div class="card-body">
+                                    <h3>Ratings</h3>
+                                    <hr>
+                                    <p>Rating directive that will take care of visualising a star rating bar.</p>
+                                    <p><strong>Refer following links for usage and more options:</strong></p>
+                                    <div class="table-responsive">
+                                        <table class="table table-hover table-bordered">
+                                            <thead>
+                                                <tr>
+                                                    <th>Type</th>
+                                                    <th>URL</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td><strong>NG-Bootstrap Page</strong></td>
+                                                    <td><a href="https://ng-bootstrap.github.io/#/components/rating" target="_blank">https://ng-bootstrap.github.io/#/components/rating</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><strong>Template Page</strong></td>
+                                                    <td><a href="https://wrappixel.com/demos/angular-admin-templates/admin-press-angular/main/#/component/rating" target="_blank">https://wrappixel.com/demos/angular-admin-templates/admin-press-angular/main/#/component/rating</a></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- card -->
+                            <div class="card" id="tab">
+                                <div class="card-body">
+                                    <h3>Tabs</h3>
+                                    <hr>
+                                    <p><strong>Refer following links for usage and more options:</strong></p>
+                                    <div class="table-responsive">
+                                        <table class="table table-hover table-bordered">
+                                            <thead>
+                                                <tr>
+                                                    <th>Type</th>
+                                                    <th>URL</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td><strong>NG-Bootstrap Page</strong></td>
+                                                    <td><a href="https://ng-bootstrap.github.io/#/components/tabs" target="_blank">https://ng-bootstrap.github.io/#/components/tabs</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><strong>Template Page</strong></td>
+                                                    <td><a href="https://wrappixel.com/demos/angular-admin-templates/admin-press-angular/main/#/component/tabs" target="_blank">https://wrappixel.com/demos/angular-admin-templates/admin-press-angular/main/#/component/tabs</a></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- card -->
+                            <div class="card" id="tp">
+                                <div class="card-body">
+                                    <h3>Timepicker</h3>
+                                    <hr>
+                                    <p><strong>Refer following links for usage and more options:</strong></p>
+                                    <div class="table-responsive">
+                                        <table class="table table-hover table-bordered">
+                                            <thead>
+                                                <tr>
+                                                    <th>Type</th>
+                                                    <th>URL</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td><strong>NG-Bootstrap Page</strong></td>
+                                                    <td><a href="https://ng-bootstrap.github.io/#/components/timepicker" target="_blank">https://ng-bootstrap.github.io/#/components/timepicker</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><strong>Template Page</strong></td>
+                                                    <td><a href="https://wrappixel.com/demos/angular-admin-templates/admin-press-angular/main/#/component/timepicker" target="_blank">https://wrappixel.com/demos/angular-admin-templates/admin-press-angular/main/#/component/timepicker</a></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- card -->
+                            <div class="card" id="toastr">
+                                <div class="card-body">
+                                    <h3>Toastr Notifications</h3>
+                                    <hr>
+                                    <p>This Angular toastr module will show bootstrap-like toasts.</p>
+                                    <p><strong>Refer following links for usage and more options:</strong></p>
+                                    <div class="table-responsive">
+                                        <table class="table table-hover table-bordered">
+                                            <thead>
+                                                <tr>
+                                                    <th>Type</th>
+                                                    <th>URL</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td><strong>Plugin Github Page</strong></td>
+                                                    <td><a href="https://github.com/PointInside/ng2-toastr" target="_blank">https://github.com/PointInside/ng2-toastr</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><strong>Template Page</strong></td>
+                                                    <td><a href="https://wrappixel.com/demos/angular-admin-templates/admin-press-angular/main/#/extra-component/toastr" target="_blank">https://wrappixel.com/demos/angular-admin-templates/admin-press-angular/main/#/extra-component/toastr</a></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- card -->
+                            <div class="card" id="editor">
+                                <div class="card-body">
+                                    <h3>Editor</h3>
+                                    <hr>
+                                    <p>An Angular Editor.</p>
+                                    <p><strong>Refer following links for usage and more options:</strong></p>
+                                    <div class="table-responsive">
+                                        <table class="table table-hover table-bordered">
+                                            <thead>
+                                                <tr>
+                                                    <th>Type</th>
+                                                    <th>URL</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td><strong>Plugin Github Page</strong></td>
+                                                    <td><a href="https://github.com/KillerCodeMonkey/ngx-quill" target="_blank">https://github.com/KillerCodeMonkey/ngx-quill</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><strong>Template Page</strong></td>
+                                                    <td><a href="https://wrappixel.com/demos/angular-admin-templates/admin-press-angular/main/#/extra-component/editor" target="_blank">https://wrappixel.com/demos/angular-admin-templates/admin-press-angular/main/#/extra-component/editor</a></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- card -->
+                            <div class="card" id="fu">
+                                <div class="card-body">
+                                    <h3>File Upload</h3>
+                                    <hr>
+                                    <p><strong>Refer following links for usage and more options:</strong></p>
+                                    <div class="table-responsive">
+                                        <table class="table table-hover table-bordered">
+                                            <thead>
+                                                <tr>
+                                                    <th>Type</th>
+                                                    <th>URL</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td><strong>Plugin Github Page</strong></td>
+                                                    <td><a href="https://github.com/valor-software/ng2-file-upload" target="_blank">https://github.com/valor-software/ng2-file-upload</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><strong>Template Page</strong></td>
+                                                    <td><a href="https://wrappixel.com/demos/angular-admin-templates/admin-press-angular/main/#/extra-component/upload" target="_blank">https://wrappixel.com/demos/angular-admin-templates/admin-press-angular/main/#/extra-component/upload</a></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- card -->
+                            <div class="card" id="dd">
+                                <div class="card-body">
+                                    <h3>Drag & Drop</h3>
+                                    <hr>
+                                    <p><strong>Refer following links for usage and more options:</strong></p>
+                                    <div class="table-responsive">
+                                        <table class="table table-hover table-bordered">
+                                            <thead>
+                                                <tr>
+                                                    <th>Type</th>
+                                                    <th>URL</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td><strong>Plugin Github Page</strong></td>
+                                                    <td><a href="https://github.com/valor-software/ng2-dragula" target="_blank">https://github.com/valor-software/ng2-dragula</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><strong>Template Page</strong></td>
+                                                    <td><a href="https://wrappixel.com/demos/angular-admin-templates/admin-press-angular/main/#/extra-component/dragndrop" target="_blank">https://wrappixel.com/demos/angular-admin-templates/admin-press-angular/main/#/extra-component/dragndrop</a></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- card -->
+                            <div class="card" id="form">
+                                <div class="card-body">
+                                    <h3>Forms</h3>
+                                    <hr>
+                                    <h5>Basic Form</h5>
+                                    <hr>
+                                    <p class="card-text">
+                                        Basic form labels have inline block styling where form controls are below its label. This is the default bootstrap and most basic style for displaying forms. You can always add more stuff like form sections, form control borders, tooltips, icons, round form controls, square form controls etc..
+                                    </p>
+
+                                    <p><strong>Refer following links for usage:</strong></p>
+                                    <table class="table table-bordered table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th>Type</th>
+                                                <th>URL</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><strong>Template Page</strong></td>
+                                                <td><a href="https://wrappixel.com/demos/angular-admin-templates/admin-press-angular/main/#/forms/basicform" target="_blank">https://wrappixel.com/demos/angular-admin-templates/admin-press-angular/main/#/forms/basicform</a></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <hr>
+                                    <h5>Horizontal Form</h5>
+                                    <hr>
+                                    <p class="card-text">
+                                        Horizontal Forms labels have inline styling where form controls are in the same line as its label. Add <code>.form-horizontal</code> class to the form tag to have horizontal form styling. You can always add more stuff like form sections, form control borders, tooltips, icons, round form controls, square form controls etc..
+                                    </p>
+                                    <hr>
+                                    <h5>Form Validation</h5>
+                                    <hr>
+                                    <p class="card-text">
+                                        This form provides full form validations.
+                                    </p>
+
+                                    <p><strong>Refer following links for usage:</strong></p>
+                                    <table class="table table-bordered table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th>Type</th>
+                                                <th>URL</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><strong>Template Page</strong></td>
+                                                <td><a href="https://wrappixel.com/demos/angular-admin-templates/admin-press-angular/main/#/forms/formvalidation" target="_blank">https://wrappixel.com/demos/angular-admin-templates/admin-press-angular/main/#/forms/formvalidation</a></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <hr>
+                                    <h5>Form Typehead</h5>
+                                    <hr>
+                                    <p class="card-text">
+                                        A typeahead example that gets values from a static <code>string[]</code>
+                                    </p>
+
+                                    <p><strong>Directives :</strong></p>
+                                    <table class="table table-bordered table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th>Directive</th>
+                                                <th>Selector</th>
+                                                <th>Description</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><strong>NgbTypeahead</strong></td>
+                                                <td><code>input[ngbTypeahead]</code></td>
+                                                <td>NgbTypeahead directive provides a simple way of creating powerful typeaheads from any text input</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                    <p><strong>Refer following links for usage:</strong></p>
+                                    <table class="table table-bordered table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th>Type</th>
+                                                <th>URL</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><strong>NG-Bootstrap Page</strong></td>
+                                                <td><a href="https://ng-bootstrap.github.io/#/components/typeahead" target="_blank">https://ng-bootstrap.github.io/#/components/typeahead</a></td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Template Page</strong></td>
+                                                <td><a href="https://wrappixel.com/demos/angular-admin-templates/admin-press-angular/main/#/component/typehead" target="_blank">https://wrappixel.com/demos/angular-admin-templates/admin-press-angular/main/#/component/typehead</a></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <hr>
+                                    <h5>Form Datepicker</h5>
+                                    <hr>
+                                    <p><strong>Directives :</strong></p>
+                                    <table class="table table-bordered table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th>Directive</th>
+                                                <th>Selector</th>
+                                                <th>Description</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><strong>NgbDatepicker</strong></td>
+                                                <td><code>ngb-datepicker</code></td>
+                                                <td>A lightweight and highly configurable datepicker directive</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>NgbInputDatepicker</strong></td>
+                                                <td><code>input[ngbDatepicker]</code></td>
+                                                <td>A directive that makes it possible to have datepickers on input fields. Manages integration with the input field itself (data entry) and ngModel (validation etc.).</td>
+                                            </tr>                            
+                                        </tbody>
+                                    </table>
+                    
+                                    <p><strong>Refer following links for usage:</strong></p>
+                                    <table class="table table-bordered table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th>Type</th>
+                                                <th>URL</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><strong>NG-Bootstrap Page</strong></td>
+                                                <td><a href="https://ng-bootstrap.github.io/#/components/datepicker" target="_blank">https://ng-bootstrap.github.io/#/components/datepicker</a></td>
+                                            </tr>                           
+                                            <tr>
+                                                <td><strong>Template Page</strong></td>
+                                                <td><a href="https://wrappixel.com/demos/angular-admin-templates/admin-press-angular/main/#/component/datepicker" target="_blank">https://wrappixel.com/demos/angular-admin-templates/admin-press-angular/main/#/component/datepicker</a></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <!-- card -->
+                            <div class="card" id="table">
+                                <div class="card-body">
+                                    <h3>Tables</h3>
+                                    <hr>
+                                    <h5>Basic Table</h5>
+                                    <hr>
+                                    <div class="card-text">
+                                        <p>Using the most basic table markup, here’s how <code>.table</code>-based tables look in Bootstrap. <strong>All table styles are inherited in Bootstrap 4</strong>, meaning any nested tables will be styled in the same manner as the parent.</p>
+                                    </div>
+                                    <pre class="language-HTML">
+                                        <code class="language-HTML">
+&lt;table class="table"&gt;
+    &lt;thead&gt;
+    &lt;tr&gt;
+        &lt;th&gt;#&lt;/th&gt;
+        &lt;th&gt;Username&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+    &lt;tr&gt;
+        &lt;th scope="row"&gt;1&lt;/th&gt;
+        &lt;td&gt;Mark&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;th scope="row"&gt;2&lt;/th&gt;
+        &lt;td&gt;Jacob&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+                                        </code>
+                                    </pre>
+                                    <table class="table table-bordered table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th>Bootstrap Tables Options</th>
+                                                <th>Class</th>
+                                                <th>Description</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><strong>Inverse table</strong></td>
+                                                <td><code>.table-inverse</code></td>
+                                                <td>You can also invert the colors—with light text on dark backgrounds using this class.</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Table head options</strong></td>
+                                                <td><code>.thead-[default/inverse]</code></td>
+                                                <td>Similar to default and inverse tables, use one of two modifier classes  to make <code>&lt;thead&gt;</code>s appear light or dark gray.</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Table head options with primary background</strong></td>
+                                                <td><code>.bg-*</code></td>
+                                                <td>Use this class to make custom heading background to <code>thead</code>.</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Striped rows</strong></td>
+                                                <td><code>.table-striped</code></td>
+                                                <td>Use this class to add zebra-striping to any table row within the <code>&lt;tbody&gt;</code>.</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Bordered table</strong></td>
+                                                <td><code>.table-bordered</code></td>
+                                                <td>Use this class for borders on all sides of the table and cells.</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Bordered striped</strong></td>
+                                                <td><code>.table-striped.table-bordered</code></td>
+                                                <td>Use this class to add zebra-striping to any table row within the <code>&lt;tbody&gt;</code>.</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Hoverable rows</strong></td>
+                                                <td><code>.table-hover</code></td>
+                                                <td>Use this class to enable a hover state on table rows within a <code>&lt;tbody&gt;</code>.</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Contextual classes</strong></td>
+                                                <td><code>.table-[active/*]</code></td>
+                                                <td>Use contextual classes to color table rows or individual cells.</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Responsive tables</strong></td>
+                                                <td><code>.table-responsive</code></td>
+                                                <td>Use this class to create responsive tables by wrapping any <code>.table</code> to make them scroll horizontally on small devices.</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <p>Tables sizing examples like default &amp; small.</p>
+                                    <table class="table table-bordered table-striped">
+                                        <thead>
+                                            <tr>
+                                                <th>Tables Sizing Options</th>
+                                                <th>Class</th>
+                                                <th>Description</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><strong>Default table</strong></td>
+                                                <td><code>.table</code></td>
+                                                <td>Use this class to the <code>.table</code> to create a table with default spacing. Default table all rows have <code>0.75rem</code> height.</td>
+                                            </tr>
+                                            <tr>
+                                                <td><strong>Small table</strong></td>
+                                                <td><code>.table-sm</code></td>
+                                                <td>Use this class to the <code>.table</code> to create a table with small spacing. Small table all rows have <code>0.6rem</code> height.</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                    <hr>
+                                    <h5>Smart Table</h5>
+                                    <hr>
+                                    <p><strong>Refer following links for usage:</strong></p>
+                                    <div class="table-responsive">
+                                        <table class="table table-hover table-bordered">
+                                            <thead>
+                                                <tr>
+                                                    <th>Type</th>
+                                                    <th>URL</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td><strong>Plugin Github Page</strong></td>
+                                                    <td><a href="https://github.com/akveo/ng2-smart-table" target="_blank">https://github.com/akveo/ng2-smart-table</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><strong>Template Page</strong></td>
+                                                    <td><a href="https://wrappixel.com/demos/angular-admin-templates/admin-press-angular/main/#/tables/smarttable" target="_blank">https://wrappixel.com/demos/angular-admin-templates/admin-press-angular/main/#/tables/smarttable</a></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <hr>
+                                    <h5>Data Tables</h5>
+                                    <hr>
+                                    <p><strong>Refer following links for usage and more options:</strong></p>
+                                    <div class="table-responsive">
+                                        <table class="table table-hover table-bordered">
+                                            <thead>
+                                                <tr>
+                                                    <th>Type</th>
+                                                    <th>URL</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td><strong>Plugin Github Page</strong></td>
+                                                    <td><a href="https://github.com/swimlane/ngx-datatable" target="_blank">https://github.com/swimlane/ngx-datatable</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><strong>Template Page</strong></td>
+                                                    <td><a href="https://wrappixel.com/demos/angular-admin-templates/admin-press-angular/main/#/tables/datatable" target="_blank">https://wrappixel.com/demos/angular-admin-templates/admin-press-angular/main/#/tables/datatable</a></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- card -->
+                            <div class="card" id="chart">
+                                <div class="card-body">
+                                    <h3>Charts</h3>
+                                    <hr>
+                                    <h5>Chart JS</h5>
+                                    <hr>
+                                    <p>Beautiful charts for Angular based on Chart.js</p>
+                                    <p><strong>Refer following links for usage and more options:</strong></p>
+                                    <div class="table-responsive">
+                                        <table class="table table-hover table-bordered">
+                                            <thead>
+                                                <tr>
+                                                    <th>Type</th>
+                                                    <th>URL</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td><strong>Plugin Github Page</strong></td>
+                                                    <td><a href="https://github.com/valor-software/ng2-charts" target="_blank">https://github.com/valor-software/ng2-charts</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><strong>Template Page</strong></td>
+                                                    <td><a href="https://wrappixel.com/demos/angular-admin-templates/admin-press-angular/main/#/charts/chartjs" target="_blank">https://wrappixel.com/demos/angular-admin-templates/admin-press-angular/main/#/charts/chartjs</a></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <hr>
+                                    <h5>Chartist JS</h5>
+                                    <hr>
+                                    <p>Chartist component for Angular.</p>
+                                    <p><strong>Refer following links for usage and more options:</strong></p>
+                                    <div class="table-responsive">
+                                        <table class="table table-hover table-bordered">
+                                            <thead>
+                                                <tr>
+                                                    <th>Type</th>
+                                                    <th>URL</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        <strong>Plugin Github Page</strong>
+                                                    </td>
+                                                    <td>
+                                                        <a href="https://github.com/willsoto/ng-chartist" target="_blank">https://github.com/willsoto/ng-chartist</a>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        <strong>Template Page</strong>
+                                                    </td>
+                                                    <td>
+                                                        <a href="https://wrappixel.com/demos/angular-admin-templates/admin-press-angular/main/#/charts/chartistjs" target="_blank">https://wrappixel.com/demos/angular-admin-templates/admin-press-angular/main/#/charts/chartistjs</a>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- card -->
+                            <div class="card" id="calendar">
+                                <div class="card-body">
+                                    <h3>Calendar</h3>
+                                    <hr>
+                                    <p>A calendar component for Angular 4.0+ that can display events on a month, week or day view.</p>
+                                    <p><strong>Refer following links for usage and more options:</strong></p>
+                                    <div class="table-responsive">
+                                        <table class="table table-hover table-bordered">
+                                            <thead>
+                                                <tr>
+                                                    <th>Type</th>
+                                                    <th>URL</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td><strong>Plugin Github Page</strong></td>
+                                                    <td><a href="https://github.com/mattlewis92/angular-calendar" target="_blank">https://github.com/mattlewis92/angular-calendar</a></td>
+                                                </tr>
+                                                <tr>
+                                                    <td><strong>Template Page</strong></td>
+                                                    <td><a href="https://wrappixel.com/demos/angular-admin-templates/admin-press-angular/main/#/apps/fullcalendar" target="_blank">https://wrappixel.com/demos/angular-admin-templates/admin-press-angular/main/#/apps/fullcalendar</a></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                                                   
+                            <!-- card -->
+                            <div class="card" id="support">
+                                <div class="card-body">
+                                    <h3>Free support</h3>
+                                    <hr>
+                                    <p>If you have any type of query or issue, feel free to contact us.</p>
+                                </div>
+                            </div>
+                            <!-- card -->
+                            <div class="card" id="thanks">
+                                <div class="card-body">
+                                    <div class="display-5 text-center text-success">
+                                        Thank you
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- card -->
+                        </div>
+                    </div>
+                </div>
+                <!-- ============================================================== -->
+                <!-- End PAge Content -->
+                <!-- ============================================================== -->
+            </div>
+            <!-- ============================================================== -->
+            <!-- End Container fluid  -->
+            <!-- ============================================================== -->
+            <!-- ============================================================== -->
+            <!-- footer -->
+            <!-- ============================================================== -->
+            <footer class="footer"> © 2020 Admin Press Angular by Wrappixel.com </footer>
+            <!-- ============================================================== -->
+            <!-- End footer -->
+            <!-- ============================================================== -->
+        </div>
+        <!-- ============================================================== -->
+        <!-- End Page wrapper  -->
+        <!-- ============================================================== -->
+    </div>
+    <!-- ============================================================== -->
+    <!-- End Wrapper -->
+    <!-- ============================================================== -->
+    <!-- ============================================================== -->
+    <!-- All Jquery -->
+    <!-- ============================================================== -->
+    <script src="../landingpage/assets/jquery/jquery.min.js"></script>
+    <!-- Bootstrap tether Core JavaScript -->
+    <script src="../landingpage/assets/bootstrap/js/popper.min.js"></script>
+    <script src="../landingpage/assets/bootstrap/js/bootstrap.min.js"></script>
+    <!-- slimscrollbar scrollbar JavaScript -->
+    <script src="../landingpage/js/jquery.slimscroll.js"></script>
+    <!--Wave Effects -->
+    <script src="../landingpage/js/waves.js"></script>
+    <!--Menu sidebar -->
+    <script src="../landingpage/js/sidebarmenu.js"></script>
+    <!--Custom JavaScript -->
+    <script src="../landingpage/js/custom.min.js"></script>
+    <script src="../landingpage/assets/prism/prism.js"></script>
+    <script>
+        // ============================================================== 
+        // Slimscrollbars
+        // ============================================================== 
+        $('.scroll-sidebar').slimScroll({
+            position: 'left',
+            size: "5px",
+            height: '100%',
+            color: '#dcdcdc'
+        });
+        // ============================================================== 
+        // Sidebarmenu
+        // ============================================================== 
+        $(function () {
+            $('#sidebarnav').metisMenu();
+        });
+        $('#sidebarnav a').click(function() {
+            $('html, body').animate({
+                scrollTop: $($(this).attr('href')).offset().top - 85
+            }, 500);
+            return false;
+        });
+    
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,26 @@
+.container {
+  margin-top: 20px;
+}
+.mdi-20 {
+  font-size: 20px;
+}
+.mdi-folder {
+  color: #f8d775;
+}
+.card-header {
+  height: 55px;
+}
+.item-title {
+  font-weight: 600;
+}
+li.item:hover {
+  background: #0000000a;
+}
+li.item:active {
+  background: #0000001e;
+}
+
+.file-data {
+  height: 600px;
+  overflow-y: auto;
+}

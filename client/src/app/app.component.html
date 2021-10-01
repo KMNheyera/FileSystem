@@ -1,0 +1,42 @@
+<div class="container">
+  <div class="card">
+    <div class="card-header text-center">
+      <div class="row">
+        <div class="col-1">
+          <button *ngIf="isBack"  class="btn btn-primary btn-sm" (click)="back()">
+            <i class="mdi mdi-arrow-left mdi-20" aria-hidden="true"></i>
+          </button>
+        </div>
+        <div class="col-11">
+          <h1 class="tltle">
+            {{title}}
+          </h1>
+        </div>
+      </div>
+    </div>
+    <ul class="list-group list-group-flush">
+      <li class="list-group-item item-title">
+        <div class="row">
+          <div class="col-md-1 col-12"><span class="mdi mdi-folder mdi-20"></span></div>
+          <div class="col-md-3 col-12">name</div>
+          <div class="col-md-3 col-12">filename</div>
+          <div class="col-md-1 col-12">filesize</div>
+          <div class="col-md-2 col-12">filetype</div>
+          <div class="col-md-2 col-12">Permissions</div>
+        </div>
+      </li>
+    </ul>
+      <ul class="list-group list-group-flush file-data">
+      <li *ngFor="let file of files" class="list-group-item item">
+        <div class="row" (click)="resolveNewFolder(file.fileName, file.isDirectory)">
+          <div class="col-md-1 col-12"><span class="mdi mdi-20" [ngClass]="{'mdi-folder': file.isDirectory}" ></span></div>
+          <div class="col-md-3 col-12">{{file.fileName}}</div>
+          <div class="col-md-3 col-12">{{file.fullPath}}</div>
+          <div class="col-md-1 col-12">{{file.fileSize}}</div>
+          <div class="col-md-2 col-12">{{file.fileType}}</div>
+          <div class="col-md-2 col-12">{{file.permissions}}</div>
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
